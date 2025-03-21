@@ -1,21 +1,9 @@
-// 유저가 값을 입력한다
-// +버튼을 클릭하면, 할일추가
-// delete버튼 클릭하면, 할일이 삭제된다
-// check버튼 누르면 할일이 끝나면서 밑줄
-// 1. check 누르는 순간 true > false
-// 2. true이면 끝난걸로 간주하고 밑줄
-// 3. false이면 진행중인걸로 간주하고 그대로
-// 4. check 다시 누르면 안끝난걸로 변경
-// 진행중 끝남 탭 누르면 언더바 이동
-// 끝남은 끝난 아이템만, 진행중은 진행중인 아이템만
-// 전체탭을 누르면 다시 전체 아이템으로 돌아옴
-
 let underLine = document.getElementById("under-line");
 let taskInput = document.getElementById("task-input");
 let addButton = document.getElementById("add-button");
 let taskList = [];
-let tabs = document.querySelectorAll(".task-tabs div"); //조건에 만족하는 모든것을 가져옴
-let mode = "all"; // 전역변수 선언
+let tabs = document.querySelectorAll(".task-tabs div"); 
+let mode = "all";
 let filterList = [];
 
 console.log(tabs)
